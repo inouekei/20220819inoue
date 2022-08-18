@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/*
+Theme Name:wp-theme
+Theme URL: テーマのサイトのURL
+Description: テーマの説明
+Author: テーマの作者
+Version: テーマのバージョン
+Tags: テーマの特徴を表すタグ（カンマ区切り/オプション）
+License: テーマのライセンス
+License URI: テーマのライセンスのURL
+*/
+
+/*------------------------*/
+/*　  全体・共通のスタイル    */
+/*------------------------*/
+body {
+  color: gray;
+  background: #fafafa;
+}
+.section-title {
+  font-size: 20px;
+  margin: 30px 0;
+  color: gray;
+  position: relative;
+}
+.section-title::before {
+  position: absolute;
+  top: -14px;
+  content: "New Post";
+  font-size: 8pt;
+  font-family: 'Indie Flower', cursive;
+  color: maroon;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.container {
+  margin: 0 20px;
+}
+.container-top {
+  width: 65%;
+}
+main{
+  padding: 50px 10vw;
+}
+
+/* eyecatch */
+.eyecatch {
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+.top-eyecatch {
+  width: 100%;
+  height: 400px;
+  background: url(./img/media__firstview.png) no-repeat;
+  background-position: left;
+  background-size: cover;
+  text-align: center;
+  font-size: 45pt;
+  font-family: 'Indie Flower', cursive;
+  color: white;
+}
+.top-eyecatch h1 {
+  padding: 100px;
+}
+.text-content {
+  background: #fff;
+  padding: 20px 18px 1px;
+  width: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: gray;
+}
+/* page-link */
+.magazine-colum {
+  position: relative;
+  display: block;
+  width: 30%;
+  margin: 0 10px 20px 0;
+  max-height: 300px;
+  box-sizing: border-box;
+}
+.magazine-colum>img {
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.magazine-colum>p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.category-tag {
+  text-align: center;
+  background: darkmagenta;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  min-width: 100px;
+}
+.article__date {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/*------------------------*/
+/*         header         */
+/*------------------------*/
+.header-nav {
+  background: #fff;
+  text-align: center;
+}
+.header-logo {
+  text-align: center;
+  font-size: 30px;
+  line-height: 0.8;
+  margin-top: 10px;
+  padding: 10px 0;
+  display: inline-block;
+}
+.header-content ul li {
+  line-height: 60px;
+}
+.header-about{
+  margin: auto;
+}
+.header-about li {
+  display: inline-block;
+  margin-left: 30px;
+  color: gray;
+}
+.header-about li:first-child {
+  margin-left: 0;
+}
+
+
+/*------------------------*/
+/*         footer         */
+/*------------------------*/
+#footer {
+  background-color: white;
+}
+#footer small {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+
+/* ------------ singlepage-------------- */
+.single-container {
+  width: 768px;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.single-header__contain {
+  margin-bottom: 30px;
+}
+.single-category-tag {
+  width: 100px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.single-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.single-eyecatch>img {
+  width: 768px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 -70px;
+}
+.main-text h2 {
+  font-size: 28px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.main-text h3 {
+  font-size: 22px;
+  border-left: 10px solid darkmagenta;
+  padding: 3px 10px;
+  margin: 20px 0 20px 0;
+}
+.main-text h4 {
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 20px 0 20px 0;
+}
+.page-eyecatch {
+  height: 200px;
+  background-color: darkmagenta;
+}
+.page-title__h1 {
+  padding: 80px;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* sidebar */
+.sidebar {
+  width: 30%;
+  height: 100%;
+}
+.widget {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+.widget-ttl{
+  font-size: 20px; 
+}
+.site-banner{
+  padding: 0;
+}
+.widget a img{
+  border-radius: 10px;
+}
+.sidebar-logo{
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: darkmagenta;
+}
+.sidebar-logo img{
+  margin: auto;
+}
+.widget p{
+  margin: 20px 0;
+}
+.widget-about h2{
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* カテゴリーサイドバー  */
+
+.widget_categories ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.widget_categories .cat-item {
+  display: block;
+  padding: 10px 0;
+  margin: 1px;
+  color: gray;
+  position: relative;
+  border-bottom: 1px solid lightgray;
+}
+.widget_categories .cat-item::after {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  content: "→";
+  color: darkmagenta;
+}
+
+/* 759以下の時のスタイル */
+@media screen and (max-width: 759px) {
+  .header-content{
+    display: none;
+  }
+
+  .container-top {
+    padding-bottom: 70px;
+    width: 100%;
+  }
+
+  .magazine-colum {
+    width: 90%;
+  }
+
+  .top-eyecatch {
+    height: 400px;
+    margin: 0;
+    padding-top: 100px;
+    font-size: 20pt;
+    background: url(./img/media__firstview-sp.png);
+    background-size: 100% auto;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+
+  .single-eyecatch img {
+    height: auto;
+  }
+
+  .single-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .single-container p {
+    font-size: 14px;
+  }
+
+  .eyecatch {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .single-container {
+    width: 90vw;
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  .single-eyecatch>img {
+  width: 90vw;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: auto -15px;
+  }
+
+  .page-eyecatch {
+    height: 200px;
+    padding: 100px;
+  }
+
+  .sidebar {
+    border-top: solid lightgray;
+    padding-top: 50px;
+    width: 90%;
+  }
+}

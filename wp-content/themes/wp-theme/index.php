@@ -13,6 +13,8 @@
               <a href="<?php the_permalink(); ?>" class="magazine-colum">
                 <?php if (has_post_thumbnail()) : ?>
                   <?php the_post_thumbnail(); ?>
+                <?php else : ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog__first.jpg" alt="no-img">
                 <?php endif; ?>
                 <?php if (!is_category() && has_category()) : ?>
                   <p class="category-tag">

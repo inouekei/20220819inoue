@@ -15,6 +15,8 @@
     <div class="single-eyecatch eyecatch">
       <?php if (has_post_thumbnail()) : ?>
         <?php the_post_thumbnail(); ?>
+      <?php else : ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/blog__first.jpg" alt="no-img">
       <?php endif; ?>
     </div>
     <div class="main-text">
